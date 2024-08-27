@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://thumbs.dreamstime.com/b/juego-de-la-loter%C3%ADa-bolas-con-n%C3%BAmeros-127978675.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bingo-container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.header h1 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.bingo-board {
+    margin: 0 auto;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+}
+
+th, td {
+    border: 1px solid #fff;
+    padding: 5px;
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+th {
+    background-color: #333;
+}
+
+td {
+    background-color: rgba(255, 255, 255, 0.062);
+}
+
+.highlight {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+}
+
+.ball-display {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+#current-ball {
+    margin-top: 5px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+button, select {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    min-width: 150px;
+    text-align: center;
+}
+
+button:hover, select:hover {
+    background-color: #218838;
+}
+
+select {
+    appearance: none;
+}
+
+.control-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    th, td {
+        font-size: 0.7rem;
+        padding: 5px;
+    }
+
+    #current-ball {
+        font-size: 9.8rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 5px 10px;
+    }
+
+    .header h1 {
+        font-size: 1rem;
+    }
+
+    .ball-display {
+        font-size: 0.8rem;
+    }
+}
